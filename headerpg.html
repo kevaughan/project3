@@ -1,0 +1,37 @@
+<html>
+<title>Memory Match</title>
+  <script type=text/javascript async="" src="{{url_for('static', filename='ga.js') }}"></script>
+<script type=text/javascript async="" src="{{url_for('static', filename='gt.js') }}"></script>
+  <body>
+
+  	<h1 style="color:red">Memory Match - 620046381 Edition</h1>
+		<img src = "{{ url_for('static', filename='pic1.jpg') }}"/>
+  	
+  <p> Welcome to the Memory Match Game! <br> Please Select a Game Mode: </br></p>
+	
+		<img id= "link1" src= "{{ url_for('static', filename='1play.gif') }}"/> 
+		
+  		 
+	
+		<img id="link2" src= "{{ url_for('static', filename='2play.gif') }}"/>
+		
+
+		<script>
+var click1 = document.getElementsByTagName('img')[1];
+var click2 = document.getElementsByTagName('img')[2];
+
+click1.onclick = function(){
+	
+	alert("You selected a one player game");
+}
+
+
+click2.onclick = function(){
+	
+	alert("You selected a two player game");
+}
+
+</script>
+
+  </body>
+</html>
